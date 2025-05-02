@@ -4,8 +4,8 @@
 
 ### 1. Word Detection System
 
-- **Trie-based Word Lookup**: Implements a trie data structure for efficient profanity word matching
-- **Blacklist Set**: Contains base profanity words and their variations
+- **Trie-based Word Lookup**: Implements a trie data structure for efficient profanity word matching (Not new but expanded upon)
+- **Blacklist Set**: Contains base profanity words and their variations (Expanded the list)
 - **Problematic Substrings Map**: Handles legitimate words that contain profanity substrings (e.g., "assassin" contains "ass")
 
 ### 2. Pattern Recognition
@@ -30,7 +30,7 @@ const profanityFilter = require('./profanities.js');
 profanityFilter.init({
     strictness: 'medium',     // Does not change any filtration (at least not yet)
     checkWordBoundaries: true, // Check for word boundaries
-    allowRepeatedLetters: false, // If we should allow repeated chars or not (Ex. assssssss)
+    allowRepeatedLetters: false, // If we should allow repeated chars or not (e.g. assssssss)
     checkLeetSpeak: true,     // Detect leetspeak variations
     useRegexForQuickCheck: true, // Use regex for initial screening (Nice optimization for speed if you need it)
     useDictionary: true       // Use dictionary for validation (Significantly improves performance)
