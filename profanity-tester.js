@@ -1,3 +1,5 @@
+//these testcases were gpted for the most part
+
 const fs = require('fs');
 const readline = require('readline');
 const profanityFilter = require('./profanities.js');
